@@ -24,7 +24,7 @@ html {
 
 body {
   /*background: var(--bg-url) no-repeat top center/cover; /*vai puxar as informações do root*/
- background-image: url("./assets/background/background_servico_desktop.png");
+ background-image: url("./assets/background/background_servico_desktop.png") no-repeat top center/cover;
   height: 100%;
 }
 
