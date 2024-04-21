@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+/*Definções raizes*/
+:root {
+  --text-color: white; /*altera as cores dos textos*/
+  --bg-url: url(/assets/background/background_servico_desktop.png); /*altera o background*/
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./moon-stars.svg);
+  --iconfooter-color: #41015f; /*altera a cor do icone do rodape*/
+}
+
+html {
+  height: 100vh;
+  font-size: 14px;
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover; /*vai puxar as informações do root*/
+  /*background-color: #282828;*/
+  height: 100%;
+}
+
+.container {
+  height: 100vh; /* Ajustei para usar 100% da altura da viewport */
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Adicionado para centralizar horizontalmente */
+  padding: 20px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ESTILO DO HEADER */
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+header img {
+  max-width: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+header p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* ESTILO DOS BOTÕES */
+
+.gestao-botoes {
+  display: flex;
+}
+
+section.botoes-links {
+  list-style: none; /*Seve para tirar os pontinhos da lista*/
+  display: flex; /*usando o Flex vai ocupar 100% do box*/
+  flex-direction: column; /*colocar um abaixo do outro*/
+  gap: 20px;
+}
+
+section.botoes-rede-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 18px;
+}
+
+a.link button {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*border: none;*/
+
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #fff;
+  padding: 16px 24px;
+
+  background: var(--surface-color); /* cor*/
+  border: 1px solid var(--stroke-color); /* cor da borda */
+  border-radius: 30px;
+  backdrop-filter: blur(4px); /* blur é o embaçado */
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none; /*serve para tirar a linha do link*/
+  font-weight: 500; /*pode usar 500 ou bold, o peso do texto*/
+  transition: background 0.2s; /*transição, no caso quer que mexa somente no background*/
+}
+
+a.link i {
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+
+a.link button:hover,
+footer a.btn-footer:hover {
+  transform: scale(1.05);
+}
+
+.degrade {
+  /*background: linear-gradient(to right, #fe4701, #ff0054);*/
+  background: var(--surface-color-hover);
+  border: 2px solid var(--text-color);
+}
+
+/* ESTILO DO FOOTER */
+
+footer {
+  text-align: center;
+  margin: 30px;
+}
+
+footer a.btn-footer {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  font-size: 2em;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.2s;
+}
