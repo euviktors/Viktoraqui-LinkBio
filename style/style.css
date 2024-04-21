@@ -29,7 +29,7 @@
 /*fim das Definções raizes*/
 
 body {
-  background: var(--bg-url) no-repeat top center/cover; /*vai puxar as informações do root*/
+   background-image: url("./assets/background/background_desktop.png") no-repeat top center/cover;
  /* background: var(--bg-url) no-repeat top center/cover; /*vai puxar as informações do root*/
   height: 100vh;
 }
