@@ -8,7 +8,8 @@
 /*Definções raizes*/
 :root {
   --text-color: white; /*altera as cores dos textos*/
-  --bg-url: url(./assets/background/background_servico_desktop.png); /*altera o background*/
+  --bg-url: url(./background_servico_desktop.png); /*altera o background*/
+   --bgg-url: url(./assets/background/background_servico_desktop.png); /*altera o background*/
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -23,8 +24,8 @@ html {
 }
 
 body {
-  /*background: var(--bg-url) no-repeat top center/cover; /*vai puxar as informações do root*/
- background-image: url("./assets/background/background_servico_desktop.png") no-repeat top center/cover;
+ background: var(--bg-url) no-repeat top center/cover; /*vai puxar as informações do root*/
+  /*background-image: url("./assets/background/background_servico_desktop.png") no-repeat top center/cover;*/
   height: 100%;
 }
 
