@@ -7,7 +7,8 @@
 /*Definções raizes*/
 :root {
   --text-color: white; /*altera as cores dos textos*/
-  --bg-url: url(./assets/background/background_desktop.png); /*altera o background*/
+  --bg-url: url(./background_desktop.png); /*altera o background*/
+  --bgg-url: url(./assets/background/background_desktop.png); /*altera o background*/
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -18,7 +19,8 @@
 
 .light {
   --text-color: white; /*altera as cores dos textos*/
-  --bg-url: url(./assets/background/background2_desktop.png);
+   --bg-url: url(./background2_desktop.png);
+  --bgg-url: url(./assets/background/background2_desktop.png);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
