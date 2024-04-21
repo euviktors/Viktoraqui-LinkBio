@@ -2,4 +2,4 @@
 Projeto Semelhante ao linktree
 
 #link do projeto
-https://euviktors.github.io/DevLinks/
+https://euviktors.github.io/Viktoraqui-LinkBio/
